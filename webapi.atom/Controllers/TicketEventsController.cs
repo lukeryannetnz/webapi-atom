@@ -5,7 +5,7 @@ using webapi.atom.Models;
 
 namespace webapi.atom.Controllers
 {
-    public class TicketEventController : ApiController
+    public class TicketEventsController : ApiController
     {
         public IEnumerable<Event> Get()
         {

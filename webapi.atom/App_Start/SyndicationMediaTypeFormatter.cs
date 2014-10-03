@@ -13,7 +13,7 @@ using System.Xml;
 namespace webapi.atom
 {
     /// <summary>
-    /// Unashamedly stolen from the most excellent book 
+    /// From the most excellent book 
     /// http://chimera.labs.oreilly.com/books/1234000001708/ch13.html#_the_formatterparameterbinder_implementation
     /// </summary>
     public class SyndicationMediaTypeFormatter : MediaTypeFormatter
@@ -24,7 +24,7 @@ namespace webapi.atom
         public SyndicationMediaTypeFormatter()
             : base()
         {
-            this.SupportedMediaTypes.Add(new MediaTypeHeaderValue(Atom)); // <1>
+            this.SupportedMediaTypes.Add(new MediaTypeHeaderValue(Atom)); 
             this.SupportedMediaTypes.Add(new MediaTypeHeaderValue(Rss));
         }
 
@@ -35,13 +35,12 @@ namespace webapi.atom
 
         public override bool CanWriteType(Type type)
         {
-            return true; // <2>
+            return true;
         }
 
-        public override Task WriteToStreamAsync(Type type, object value, Stream
-        writeStream, HttpContent content, TransportContext transportContext) // <3>
+        public override Task WriteToStreamAsync(Type type, object value, Stream writeStream, HttpContent content, TransportContext transportContext)
         {
-            var tsc = new TaskCompletionSource<AsyncVoid>(); // <4>
+            var tsc = new TaskCompletionSource<AsyncVoid>();
             tsc.SetResult(default(AsyncVoid));
 
             var items = new List<SyndicationItem>();
@@ -84,10 +83,10 @@ namespace webapi.atom
                 writer.Close();
             }
 
-            return tsc.Task; // <5>
+            return tsc.Task;
         }
 
-        protected SyndicationItem MapToItem(object model) // <6>
+        protected SyndicationItem MapToItem(object model)
         {
             var item = new SyndicationItem();
 
