@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapi.atom", "webapi.atom\webapi.atom.csproj", "{3680924C-74C9-4433-AF13-E48E0FD03A2A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapi.atom", "webapi.atom.web\webapi.atom.csproj", "{3680924C-74C9-4433-AF13-E48E0FD03A2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapi.atom.Tests", "..\..\..\Users\Luke\Documents\Visual Studio 2013\Projects\webapi.atom\webapi.atom.Tests\webapi.atom.Tests.csproj", "{B09069A6-B2CC-43D6-ACE2-48C004324870}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "webapi.atom.Tests", "webapi.atom.Tests\webapi.atom.Tests.csproj", "{B09069A6-B2CC-43D6-ACE2-48C004324870}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
