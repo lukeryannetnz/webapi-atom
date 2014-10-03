@@ -78,7 +78,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Start\SyndicationMediaTypeFormatter.cs" />
+    <Compile Include="Formatters\SyndicationMediaTypeFormatter.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\TicketEventsController.cs" />
     <Compile Include="Global.asax.cs">

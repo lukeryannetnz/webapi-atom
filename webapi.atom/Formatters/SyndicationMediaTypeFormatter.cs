@@ -10,7 +10,7 @@ using System.ServiceModel.Syndication;
 using System.Threading.Tasks;
 using System.Xml;
 
-namespace webapi.atom
+namespace webapi.atom.Formatters
 {
     /// <summary>
     /// From the most excellent book 
